@@ -19,7 +19,6 @@
 
 body{font-family:Arial,Helvetica,sans-serif;background:var(--branco);color:var(--azul);scroll-behavior:smooth}
 
-/* Menu geral */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -27,6 +26,7 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--branco);color:var(-
   background-color: #0D1B2A;
   padding: 15px 30px;
   color: white;
+  position: relative;
 }
 
 .navbar .logo a {
@@ -68,23 +68,24 @@ body{font-family:Arial,Helvetica,sans-serif;background:var(--branco);color:var(-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    right: 0;
-    top: 60px;
-    background-color: #0D1B2A;
+    display: none; /* começa escondido */
     flex-direction: column;
-    width: 200px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    border-left: 2px solid #FFD700;
+    background-color: #0D1B2A;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    border-top: 2px solid #FFD700;
   }
 
   .nav-links li {
-    margin: 15px 0;
+    margin: 10px 0;
+    text-align: center;
   }
 
   .nav-links.active {
-    transform: translateX(0);
+    display: flex; /* mostra ao clicar */
   }
 
   .hamburger {
@@ -481,6 +482,15 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % items.length;
   updateCarousel();
 }, 5000);
+</script>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 </script>
 
 
