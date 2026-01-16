@@ -93,6 +93,27 @@ section h2{text-align:center;font-size:36px;margin-bottom:50px}
 .card h3{margin-bottom:15px}
 .card a{color:var(--azul);font-weight:bold;text-decoration:none}
 
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.carousel-item p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+.carousel-item strong {
+  color:#FFD700;
+}
+
 .contadores{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -237,6 +258,36 @@ footer{
 </div>
 </section>
 
+<section id="feedbacks" style="background-color:#0D1B2A; color:white; padding:50px 0;">
+  <div class="container" style="max-width:1000px; margin:0 auto; text-align:center;">
+    <h2 style="color:#FFD700; margin-bottom:30px;">O que nossos clientes dizem</h2>
+
+    <div class="carousel">
+      <div class="carousel-track">
+        <!-- Feedback 1 -->
+        <div class="carousel-item">
+          <p>"Excelente serviço! A mudança foi rápida e meus móveis chegaram intactos. Recomendo totalmente!"</p>
+          <strong>- João S., Lisboa</strong>
+        </div>
+        <!-- Feedback 2 -->
+        <div class="carousel-item">
+          <p>"Profissionalismo e pontualidade! Minha mudança comercial foi perfeita graças à equipe Italo Fagundes."</p>
+          <strong>- Maria F., Lisboa</strong>
+        </div>
+        <!-- Feedback 3 -->
+        <div class="carousel-item">
+          <p>"Superou minhas expectativas! Atendimento personalizado e equipe muito cuidadosa com tudo."</p>
+          <strong>- Carlos P., Lisboa</strong>
+        </div>
+      </div>
+      <!-- Botões -->
+      <button class="prev" style="background:#FFD700; border:none; padding:10px 20px; margin-right:10px; cursor:pointer;">&#10094;</button>
+      <button class="next" style="background:#FFD700; border:none; padding:10px 20px; cursor:pointer;">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+
 <section id="sobre">
   <h2>Sobre a Fagundes Transportes</h2>
 
@@ -324,6 +375,34 @@ window.addEventListener('scroll', () => {
     contadoresAtivados = true;
   }
 });
+</script>
+
+<script>
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let currentIndex = 0;
+
+function updateCarousel() {
+  track.style.transform = 'translateX(-' + currentIndex * 100 + '%)';
+}
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateCarousel();
+});
+
+// Auto-rodar a cada 5 segundos
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+}, 5000);
 </script>
 
 
