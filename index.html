@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Italo Fagundes | Empresa de Mudanças em Lisboa</title>
+<meta name="description" content="Empresa de mudanças em Lisboa. Mudanças residenciais, comerciais, urgentes e económicas. Orçamento rápido e seguro.">
+<meta name="robots" content="index, follow">
+
+<style>
+:root{
+  --azul:#0A2540;
+  --amarelo:#F5C400;
+  --branco:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{font-family:Arial,Helvetica,sans-serif;background:var(--branco);color:var(--azul);scroll-behavior:smooth}
+
+/* MENU */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:var(--azul);
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+nav h2{color:var(--amarelo)}
+nav ul{list-style:none;display:flex;gap:25px}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+nav a:hover{color:var(--amarelo)}
+
+/* HERO */
+header{
+  height:100vh;
+  background:linear-gradient(rgba(10,37,64,.9),rgba(10,37,64,.9)),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+.hero{
+  max-width:900px;
+  animation:slideDown 1.2s ease;
+}
+.hero h1{font-size:48px;margin-bottom:20px}
+.hero span{color:var(--amarelo)}
+.hero p{font-size:20px;margin-bottom:30px}
+
+.btn{
+  background:var(--amarelo);
+  color:var(--azul);
+  padding:15px 35px;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.05);background:#e0b200}
+
+/* SEÇÕES */
+section{
+  padding:100px 40px;
+  max-width:1200px;
+  margin:auto;
+}
+section h2{text-align:center;font-size:36px;margin-bottom:50px}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.card{
+  background:#f9f9f9;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+  opacity:0;
+  transform:translateY(40px);
+  transition:.8s;
+}
+.card h3{margin-bottom:15px}
+.card a{color:var(--azul);font-weight:bold;text-decoration:none}
+
+.contadores{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+  text-align:center;
+}
+
+.contador{
+  background:#f9f9f9;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.contador .numero{
+  font-size:48px;
+  font-weight:bold;
+  color:var(--amarelo);
+  display:block;
+  margin-bottom:10px;
+}
+
+.contador p{
+  font-size:18px;
+  font-weight:bold;
+  color:var(--azul);
+}
+
+
+/* CTA */
+.cta{
+  background:var(--azul);
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+}
+.cta h2{margin-bottom:20px}
+.cta a{margin-top:20px;display:inline-block}
+
+/* FOOTER */
+footer{
+  background:#06192d;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* ANIMAÇÕES */
+@keyframes slideDown{
+  from{opacity:0;transform:translateY(-60px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.show{opacity:1;transform:translateY(0)}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Transporte Fagundes</h2>
+  <ul>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="hero">
+    <h1>Empresa de Mudanças em <span>Lisboa</span></h1>
+    <p>Serviço profissional, seguro e rápido para residências e empresas</p>
+    <a class="btn" href="https://wa.me/351XXXXXXXXX">Orçamento Gratuito</a>
+  </div>
+</header>
+
+<section id="servicos">
+<h2>Nossos Serviços</h2>
+<div class="cards">
+
+  <div class="card">
+  <h3>Mudanças Residenciais</h3>
+  <p>Serviço completo para casas e apartamentos em Lisboa.</p>
+  <a href="./residencial/">Saiba mais →</a>
+</div>
+
+<div class="card">
+  <h3>Mudanças Comerciais</h3>
+  <p>Planeamento profissional para empresas, lojas e negócios.</p>
+  <a href="./comercial/">Saiba mais →</a>
+</div>
+
+
+<div class="card">
+<h3>Mudança de Escritório</h3>
+<p>Planeamento profissional para empresas.</p>
+<a href="./escritorio/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudanças Locais</h3>
+<p>Serviço rápido dentro de Lisboa.</p>
+<a href="./local/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudanças Nacionais</h3>
+<p>Transporte seguro em todo Portugal.</p>
+<a href="./nacional/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudanças com Embalagem</h3>
+<p>Proteção total dos seus bens.</p>
+<a href="./embalagem/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudanças para Estudantes</h3>
+<p>Soluções acessíveis.</p>
+<a href="./estudantes/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudança de Apartamento</h3>
+<p>Equipa especializada.</p>
+<a href="./apartamento/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudanças Urgentes</h3>
+<p>Atendimento no mesmo dia.</p>
+<a href="./urgente/">Saiba mais →</a>
+</div>
+
+<div class="card">
+<h3>Mudanças Baratas</h3>
+<p>Preço justo com qualidade.</p>
+<a href="./barata/">Saiba mais →</a>
+</div>
+
+</div>
+</section>
+
+<section id="sobre">
+  <h2>Sobre a Italo Fagundes</h2>
+
+  <p style="text-align:center;max-width:900px;margin:0 auto 60px">
+    A <strong>Italo Fagundes</strong> é uma empresa de mudanças em Lisboa com forte compromisso
+    com qualidade, pontualidade e segurança. Atuamos em toda a região de Lisboa,
+    realizando mudanças residenciais, comerciais e urgentes com total profissionalismo.
+  </p>
+
+  <div class="contadores">
+    <div class="contador">
+      <span class="numero" data-target="500"></span>
+      <p>Mudanças Realizadas</p>
+    </div>
+
+    <div class="contador">
+      <span class="numero" data-target="5"></span>
+      <p>Anos de Experiência</p>
+    </div>
+
+    <div class="contador">
+      <span class="numero" data-target="100"></span>
+      <p>% de Clientes Satisfeitos</p>
+    </div>
+
+    <div class="contador">
+      <span class="numero" data-target="12"></span>
+      <p>Atendimento 24h</p>
+    </div>
+  </div>
+</section>
+
+
+<div class="cta" id="contacto">
+<h2>Pronto para mudar sem stress?</h2>
+<a class="btn" href="https://wa.me/351XXXXXXXXX">Fale Conosco no WhatsApp</a>
+</div>
+
+<footer>
+<p>© 2026 Italo Fagundes – Empresa de Mudanças em Lisboa</p>
+</footer>
+
+<script>
+const cards=document.querySelectorAll('.card');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{threshold:0.2});
+cards.forEach(card=>observer.observe(card));
+</script>
+
+<script>
+const contadores = document.querySelectorAll('.numero');
+
+const animarContadores = () => {
+  contadores.forEach(contador => {
+    const alvo = +contador.getAttribute('data-target');
+    const atualizar = () => {
+      const valorAtual = +contador.innerText;
+      const incremento = Math.ceil(alvo / 100);
+
+      if (valorAtual < alvo) {
+        contador.innerText = valorAtual + incremento;
+        setTimeout(atualizar, 25);
+      } else {
+        contador.innerText = alvo;
+      }
+    };
+    atualizar();
+  });
+};
+
+let contadoresAtivados = false;
+
+window.addEventListener('scroll', () => {
+  const secao = document.querySelector('#sobre');
+  const posicao = secao.getBoundingClientRect().top;
+  const tela = window.innerHeight;
+
+  if (posicao < tela && !contadoresAtivados) {
+    animarContadores();
+    contadoresAtivados = true;
+  }
+});
+</script>
+
+
+</body>
+</html>
