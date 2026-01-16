@@ -19,22 +19,78 @@
 
 body{font-family:Arial,Helvetica,sans-serif;background:var(--branco);color:var(--azul);scroll-behavior:smooth}
 
-/* MENU */
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:var(--azul);
-  padding:15px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
+/* Menu geral */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D1B2A;
+  padding: 15px 30px;
+  color: white;
 }
-nav h2{color:var(--amarelo)}
-nav ul{list-style:none;display:flex;gap:25px}
-nav a{color:#fff;text-decoration:none;font-weight:bold}
-nav a:hover{color:var(--amarelo)}
+
+.navbar .logo a {
+  color: #FFD700;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Botão hamburguer - escondido no desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #FFD700;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #0D1B2A;
+    flex-direction: column;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    border-left: 2px solid #FFD700;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
 /* HERO */
 header{
@@ -172,11 +228,23 @@ footer{
 
 <body>
 
-<nav>
-  <h2>Fagundes Transportes e Mudanças</h2>
-  <ul>
+<nav class="navbar">
+  <div class="logo">
+    <a href="/mudancas-italo-fagundes/">Fagundes Transportes</a>
+  </div>
+
+  <!-- Botão hamburguer -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Links do menu -->
+    <ul class="nav-links" id="nav-links">
     <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#feedbacks">Feedbacks</a></li>
+    <li><a href="https://wa.me/351919760696" target="_blank" rel="noopener noreferrer">Orçamento</a></li>
   </ul>
 </nav>
 
