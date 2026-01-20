@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carlosleme1978-stack.github.io/mudancas-italo-fagundes/sitemap.xml
