@@ -257,7 +257,7 @@ a{color:inherit;text-decoration:none}
   /* Botão vai para baixo da logo */
   .btn{
     align-self: flex-start;
-    margin-left: 90px;
+    margin-left: px;
   }
 
 }
