@@ -262,4 +262,40 @@ a{color:inherit;text-decoration:none}
 
 }
 
+.footer-services-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px; /* alinha visualmente com a lista */
+}
+
+.footer-social img {
+  width: 42px;   /* MAIORES, como você pediu */
+  height: 42px;
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.12);
+  opacity: 1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-services-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-social {
+    margin-top: 8px;
+  }
+}
+
 
