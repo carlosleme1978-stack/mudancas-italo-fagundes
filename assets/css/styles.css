@@ -185,7 +185,7 @@ a{color:inherit;text-decoration:none}
   .brandLogo{width:110px}
 
   /* Botão menor no mobile */
-  .btn{
+  .btn{ 
     padding:10px 12px;
     font-size:14px;
     border-radius:14px;
