@@ -299,3 +299,45 @@ a{color:inherit;text-decoration:none}
 }
 
 
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carouselTrack img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 280px;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 22px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.carouselBtn.prev {
+  left: 10px;
+}
+
+.carouselBtn.next {
+  right: 10px;
+}
+
+.carouselBtn:hover {
+  background: rgba(0,0,0,0.6);
+}

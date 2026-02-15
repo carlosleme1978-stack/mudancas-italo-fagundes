@@ -1,55 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ✅ Ajuste SEO: título mais forte e local (Amadora + Grande Lisboa) -->
-  <title>Mudanças na Amadora (Grande Lisboa) | Fagundes Transportes</title>
-
-  <!-- ✅ Ajuste SEO: descrição coerente com a página (Amadora) -->
-  <meta name="description" content="Mudanças na Amadora com equipa experiente, proteção adequada e orçamento rápido por WhatsApp. Mudanças residenciais, comerciais e transporte de móveis na Amadora e Grande Lisboa. Também realizamos mudanças nacionais." />
-
- a <!-- ✅ Ajuste SEO: canonical deve apontar para a URL desta página (não para a home) -->
-  <link rel="canonical" href="https://www.fagundestransportes.pt/mudancas-em-lisboa/amadora/" />
-
-  <meta name="robots" content="index, follow" />
-  <meta property="og:type" content="website" />
-
-  <!-- ✅ Ajuste SEO: OG alinhado com Amadora -->
-  <meta property="og:title" content="Mudanças na Amadora | Fagundes Transportes" />
-  <meta property="og:description" content="Mudanças na Amadora com orçamento rápido por WhatsApp. Mudanças residenciais, comerciais e transporte de móveis na Amadora e Grande Lisboa." />
-  <meta property="og:url" content="https://www.fagundestransportes.pt/mudancas-na-amadora/" />
-
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <script src="/assets/js/site-config.js" defer></script>
-  <script src="/assets/js/main.js" defer></script>
-
-  <!-- ✅ Ajuste leve: schema com área servida incluindo Amadora -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MovingCompany","name":"Italo Fagundes Transportes","url":"https://www.fagundestransportes.pt","areaServed":["Amadora","Lisboa","Grande Lisboa","Odivelas","Sintra","Loures","Cascais","Porto","Alentejo","Algarve"],"telephone":"+351919760696","sameAs":[],"priceRange":"€€","serviceType":["Mudanças residenciais","Mudanças comerciais","Transporte de móveis","Mudanças urgentes"],"contactPoint":{"@type":"ContactPoint","telephone":"+351919760696","contactType":"customer service","availableLanguage":["pt-PT"]}}
-  </script>
-
-  <!-- ✅ Ajuste leve: FAQ com Amadora (mantém estrutura e aumenta relevância) -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto custa uma mudança na Amadora?","acceptedAnswer":{"@type":"Answer","text":"O valor depende do volume, acessos (andar/elevador), distância e serviços (embalagem/desmontagem). Envie detalhes por WhatsApp para um orçamento rápido e claro para mudanças na Amadora e Grande Lisboa."}},{"@type":"Question","name":"Fazem mudanças urgentes na Amadora?","acceptedAnswer":{"@type":"Answer","text":"Sim. Quando há disponibilidade, atendemos pedidos urgentes e também ao fim de semana."}},{"@type":"Question","name":"Atendem Algarve e Alentejo?","acceptedAnswer":{"@type":"Answer","text":"Sim. Fazemos mudanças nacionais com planeamento e logística para Algarve e Alentejo."}}]}
-  </script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mudanças em Amadora | Fagundes Transportes (Lisboa)</title>
+  <meta name="description" content="Mudanças na Amadora com planeamento urbano, proteção de bens e equipa rápida. Ideal para prédios, escadas e ruas apertadas."/>
+  <link rel="canonical" href="https://www.fagundestransportes.pt/mudancas-em-lisboa/amadora/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Mudanças em Amadora | Fagundes Transportes (Lisboa)"/>
+  <meta property="og:description" content="Mudanças na Amadora com planeamento urbano, proteção de bens e equipa rápida. Ideal para prédios, escadas e ruas apertadas."/>
+  <meta property="og:url" content="https://www.fagundestransportes.pt/mudancas-em-lisboa/amadora/"/>
+  <meta property="og:image" content="https://www.fagundestransportes.pt/assets/img/amadora1.jpeg"/>
+  <link rel="stylesheet" href="/assets/css/styles.css"/>
+  <style>
+    /* HERO estendido só nesta página */
+    .cityHeroImgWrap{border-radius:16px; overflow:hidden; border:1px solid var(--border);}
+    .cityHeroImg{width:100%; height: clamp(240px, 32vw, 420px); object-fit: cover; display:block;}
+    @media (max-width: 520px){ .cityHeroImg{height: 240px;} }
+    /* FAQ compatível com o JS/CSS existente (se houver) */
+    .faqItem{border:1px solid var(--border); border-radius:14px; padding:10px 12px; background: rgba(255,255,255,.03); margin:10px 0;}
+    .faqQ{width:100%; text-align:left; background:transparent; border:0; color:var(--text); font-weight:800; font-size:16px; padding:6px 0; cursor:pointer;}
+    .faqA{display:none; padding-top:6px; color:var(--muted);}
+    .faqItem.open .faqA{display:block;}
+  </style>
 </head>
-
 <body>
   <div class="topbar">
     <div class="container">
       <div class="nav">
         <a class="brand" href="/">
-  <img 
-    src="/assets/img/logo-mudancas.png"
-    alt="Fagundes Transportes - Mudanças em Portugal"
-    class="brandLogo"
-  >
-  <span class="brandText">
-    Fagundes Transportes 
-  </span>
-</a>
+          <img class="brandLogo" src="/assets/img/logo-mudancas.png" alt="Fagundes Transportes - Mudanças em Portugal"/>
+          <span class="brandText">Fagundes Transportes</span>
+        </a>
         <div class="menu">
           <a href="/mudancas-em-lisboa/">Lisboa</a>
           <a href="/mudancas-no-porto/">Porto</a>
@@ -58,166 +40,34 @@
           <a href="/servicos/transporte-de-moveis/">Serviços</a>
           <a href="/nacional/">Nacional</a>
         </div>
-
-        <a class="btn" href="https://simulador.fagundestransportes.pt/simulador
-" target="_blank" rel="noopener noreferrer">
-  Simular Orçamento Agora
-</a>
+        <a class="btn" href="https://simulador.fagundestransportes.pt/simulador" target="_blank" rel="noopener noreferrer">Simular Orçamento Agora</a>
       </div>
     </div>
   </div>
 
   <header class="hero">
     <div class="container">
-      <div class="breadcrumb"><a href="/">Início</a> / <a href="/mudancas-em-lisboa/">Lisboa</a> / Amadora</div>
+      <div class="breadcrumb"><a href="/">Início</a> / <a href="/mudancas-em-lisboa/">Mudanças em Lisboa</a> / Amadora</div>
+
       <div class="heroGrid" style="margin-top:14px">
         <div>
-          <!-- ✅ Ajuste SEO: H1 mais forte (Amadora + Grande Lisboa) -->
-          <h1 class="h1">Mudanças na Amadora (Grande Lisboa)</h1>
-
-          <!-- ✅ Ajuste SEO: texto mais coerente com Amadora (sem reduzir) -->
-          <p class="lead">
-            Mudanças residenciais e comerciais na Amadora com equipa experiente, proteção adequada e orçamento rápido por WhatsApp. Atuamos com forte presença na Grande Lisboa — incluindo Amadora, Lisboa, Odivelas, Sintra e Loures — e também realizamos mudanças nacionais para Alentejo, Algarve e outras regiões de Portugal, sempre com planeamento e logística.
-          </p>
+          <h1 class="h1">Mudanças em Amadora com abordagem premium e logística local</h1>
+          <p class="lead">Na Amadora, o que faz a mudança correr bem é logística urbana: paragem, escadas, elevador pequeno e sequência de carga. Fazemos com método, proteção e orçamento claro.</p>
 
           <div class="pills">
             <span class="pill">Orçamento rápido</span>
             <span class="pill">Equipa experiente</span>
             <span class="pill">Proteção e embalagem</span>
-            <span class="pill">Mudanças urgentes</span>
+            <span class="pill">Montagem/Desmontagem</span>
           </div>
+
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="ctaBtn" data-wa href="#">Falar no WhatsApp</a>
-            <a class="ctaBtn" data-greview href="https://www.fagundestransportes.pt/#avaliacoes" style="background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)">Ver avaliações</a>
+            <a class="ctaBtn" data-wa="" href="#">Falar no WhatsApp</a>
+            <a class="ctaBtn" href="/mudancas-em-lisboa/" style="background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)">Voltar para Lisboa</a>
           </div>
-        </div>
-        <div class="card cardPad">
-          <h2 class="h2" style="margin-top:0">O que incluímos</h2>
-          <div class="kpis">
-            <div class="kpi"><strong>Segurança</strong><span>manuseio cuidadoso</span></div>
-            <div class="kpi"><strong>Pontualidade</strong><span>horários combinados</span></div>
-            <div class="kpi"><strong>Transparência</strong><span>sem surpresas</span></div>
-            <div class="kpi"><strong>Suporte</strong><span>WhatsApp direto</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
 
-<section class="section"><div class="container">
-<h2 class="h2">Mudanças na Amadora com foco local</h2>
-
-<!-- ✅ Ajuste SEO: reforço sem reduzir; adiciona contexto local real -->
-<p class="lead">
-Realizar mudanças na Amadora exige conhecimento real da cidade e da sua ligação direta com Lisboa e a Grande Lisboa.
-Atuamos diariamente nesta zona, oferecendo mudanças residenciais, mudanças comerciais, transporte de móveis e apoio completo
-desde o planeamento até a entrega final, sempre respeitando as características locais e o ritmo urbano da Amadora.
-</p>
-
-<!-- ✅ Pequeno reforço (sem mudar estrutura): melhora relevância e ajuda Google a entender o serviço -->
-<p>
-Se procura uma empresa de mudanças na Amadora, o objetivo é simples: fazer a mudança com segurança, sem atrasos e sem surpresas.
-A nossa equipa está habituada a prédios sem elevador, acessos apertados, estacionamento limitado e horários mais exigentes em algumas ruas,
-o que torna o planeamento essencial para que tudo corra bem no dia.
-</p>
-
-<h3>Bairros atendidos em Amadora</h3>
-<ul class="list"><li>Reboleira</li><li>Alfragide</li><li>Venda Nova</li><li>Falagueira</li><li>Mina</li></ul>
-
-<!-- ✅ Adição curta para aumentar conteúdo útil sem “encher” -->
-<p>
-Além dos bairros acima, atendemos toda a Amadora e zonas próximas, conforme o ponto de recolha e entrega. Se tiver dúvidas sobre a sua área,
-envie a localização por WhatsApp e confirmamos rapidamente.
-</p>
-
-<h3>Acessos e circulação</h3>
-<p>
-Cidade densa com ruas residenciais, tráfego intenso e zonas antigas. Em horários de maior movimento, o acesso e o estacionamento podem ser um desafio,
-por isso ajudamos a organizar o melhor horário para reduzir tempo parado e tornar a mudança mais eficiente.
-</p>
-
-<h3>Tipo de imóvel mais comum</h3>
-<p>
-Apartamentos em prédios antigos, muitos sem elevador. Em mudanças na Amadora, isto é comum e faz parte do nosso dia a dia:
-avaliamos o andar, largura de escadas, elevador (quando existe) e o tipo de mobiliário para preparar a equipa e a proteção adequada.
-</p>
-
-<h3>Problemas locais frequentes</h3>
-<ul class="list"><li>Prédios sem elevador</li><li>Estacionamento limitado</li><li>Alta densidade</li></ul>
-
-<!-- ✅ Complemento curto para dar mais “peso” de conteúdo (sem alterar layout) -->
-<p>
-Para reduzir riscos, utilizamos técnicas de manuseio cuidadoso e proteção de móveis, especialmente em escadas e corredores estreitos.
-A organização evita danos e acelera o carregamento e descarregamento.
-</p>
-
-<h3>Tipos de mudanças mais comuns na Amadora</h3>
-<p>
-Mudanças de apartamentos T1/T2, mudanças familiares e transportes pontuais. Também realizamos mudanças de escritórios e pequenos negócios,
-incluindo recolha e entrega em diferentes pontos da Grande Lisboa, quando necessário.
-</p>
-
-<h3>Como funciona o nosso serviço na Amadora</h3>
-<p>
-O processo começa com um contacto simples por WhatsApp. Após recebermos as informações,
-avaliamos o volume, acessos e definimos a equipa e viatura adequadas. No dia da mudança,
-executamos todo o serviço com organização e cuidado, mantendo comunicação clara do início ao fim.
-</p>
-
-<!-- ✅ Complemento curto para aumentar relevância e melhorar conversão -->
-<p>
-Para agilizar o orçamento, envie: morada de recolha e entrega, andar, se há elevador, data desejada e uma descrição do volume (ou fotos).
-Com esses dados, respondemos com mais precisão e rapidez.
-</p>
-
-<p>
-Para entender a estrutura completa do nosso serviço regional, consulte a página
-<a href="/mudancas-em-lisboa/">Mudanças em Lisboa</a>.
-</p>
-
-<section class="section">
-    <div class="container">
-      <div class="banner">
-        <div>
-          <h2 class="h2" style="margin:0">Quer uma mudança sem stress?</h2>
-          <p>Envie a sua morada, andar e data. Respondemos rápido com um orçamento claro.</p>
-        </div>
-        <a class="ctaBtn" data-wa href="#">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-<h3>Perguntas frequentes sobre mudanças na Amadora</h3>
-<div class="faq">
-<details><summary>Atendem prédios sem elevador?</summary><div class="small">Sim, é comum na Amadora e estamos preparados com equipa e planeamento adequados.</div></details>
-<details><summary>Fazem mudanças rápidas?</summary><div class="small">Sim, conforme disponibilidade e volume do serviço. Se for urgente, envie a data e moradas por WhatsApp.</div></details>
-<details><summary>Atendem todos os bairros?</summary><div class="small">Sim, atendemos toda a cidade da Amadora e zonas próximas na Grande Lisboa.</div></details>
-<details><summary>Trabalham com condomínios?</summary><div class="small">Sim, respeitando regras locais e horários quando existirem restrições.</div></details>
-<details><summary>Como pedir orçamento?</summary><div class="small">Basta enviar as moradas, andar, data e volume (ou fotos) por WhatsApp para um orçamento rápido.</div></details>
-</div>
-</div></section>
-
-<footer class="footer">
-    <div class="container">
-      <div class="footerGrid">
-        <div>
-          <div style="font-weight:900;color:var(--text)">Italo Fagundes Transportes</div>
-          <div class="small">Mudanças e transportes em Lisboa, Porto, Alentejo, Algarve. Atendimento por WhatsApp: +351919760696.</div>
-          <div class="small" style="margin-top:8px">
-            <a href="/termos/">Termos</a> · <a href="/privacidade/">Privacidade</a> · <a href="/cookies/">Cookies</a>
-          </div>
-        </div>
-        <div>
-          <div class="small"><strong>Serviços</strong></div>
-          <div class="small"><a href="/servicos/mudancas-residenciais/">Residenciais</a></div>
-          <div class="small"><a href="/servicos/mudancas-comerciais/">Comerciais</a></div>
-          <div class="small"><a href="/servicos/transporte-de-moveis/">Transporte de móveis</a></div>
-          <div class="small"><a href="/servicos/mudancas-urgentes/">Urgentes</a></div>
-          <div class="small"><a href="/servicos/mudancas-fim-de-semana/">Fim de semana</a></div>
-        </div>
-      </div>
-    
-<div class="social-fixed" style="display:flex;gap:12px;justify-content:center;margin:24px 0">
+          <p class="muted" style="margin-top:10px"> Diga-nos: moradas, piso/elevador e itens grandes — respondemos com clareza.</p>
+          <div class="social-fixed" style="display:flex;gap:12px;justify-content:center;margin:24px 0">
   <a href="https://www.instagram.com/fagundestransportes/" target="_blank" aria-label="Instagram">
     <img src="../../assets/img/instagram.svg" width="50" alt="Instagram">
   </a>
@@ -225,11 +75,170 @@ Para entender a estrutura completa do nosso serviço regional, consulte a págin
     <img src="../../assets/img/facebook.svg" width="50" alt="Facebook">
   </a>
 </div>
+        </div>
 
-<div class="notice" style="margin-bottom: 50px; text-align: center;">
-      © 2026 Italo Fagundes Transportes. Todos os direitos reservados.
+        <div class="card cardPad">
+          <h2 class="h2" style="margin-top:0; text-align:center;">Amadora</h2>
+          <div class="cityHeroImgWrap">
+            <img class="cityHeroImg" src="/assets/img/amadora1.jpg" alt="Mudanças na Amadora — logística urbana, prédios e escadas" loading="eager"/>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+<section class="section">
+  <div class="container">
+    <div class="grid2">
+      <div class="card cardPad">
+        <h2 class="h2" style="margin-top:0">Amadora: mudança urbana bem feita é método (não é só força)</h2>
+        <p>Na Amadora, o que costuma “comer tempo” numa mudança não é o volume — é a logística urbana. Ruas com pouco espaço de paragem, prédios com escadas e elevadores pequenos e horários de maior movimento fazem toda a diferença.</p><p>Por isso, uma versão premium desta página não pode ser genérica. Aqui falamos de prática: planeamento do ponto de carga, sequência de caixas por divisão, proteção de cantos e gestão do tempo para evitar idas e voltas desnecessárias.</p><p>Quando a equipa trabalha com função definida (proteção, carga e montagem), a mudança flui. E isso reduz risco de danos em paredes, móveis e eletrodomésticos — principalmente em corredores apertados e patamares pequenos.</p>
+      </div>
+      <div class="card cardPad">
+        <h3 class="h3" style="margin-top:0">O que torna a Amadora diferente</h3>
+        <p>• Densidade urbana elevada e estacionamento competitivo.</p><p>• Muitos prédios com escadas e elevadores limitados.</p><p>• Mudanças rápidas exigem ordem de carga e descarrega.</p><p>• Itens grandes (sofá/frigorífico) precisam de rota interna pensada.</p>
+        <div class="pills" style="margin-top:10px">
+          <span class="pill">Ruas apertadas</span><span class="pill">Escadas</span><span class="pill">Elevador pequeno</span><span class="pill">Execução rápida</span>
+          
+        </div>
+      </div>
     </div>
   </div>
-</footer>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="grid2">
+      <div class="card cardPad">
+        <h2 class="h2" style="margin-top:0">Como planeamos para “ficar mais barato” sem cortar qualidade</h2>
+        <p>Na prática, tempo é custo. Na Amadora, reduzir tempo não é correr — é antecipar. Confirmamos piso, elevador, distância até à rua e itens grandes (cama, roupeiro, sofá) para definir o tamanho da equipa e a sequência ideal.</p><p>Se houver escadas, reforçamos proteção e organizamos a movimentação para não “travar” o fluxo. Itens pesados vão primeiro para estabilizar a carga; itens frágeis seguem protegidos e bem posicionados para não receber pressão.</p><p>O resultado é previsibilidade: orçamento mais alinhado com a realidade e menos risco de surpresas no dia.</p>
+      </div>
+      <div class="card cardPad">
+        <h3 class="h3" style="margin-top:0">Checklist rápido (envie no WhatsApp)</h3>
+        <p>1) Morada recolha + piso/elevador</p><p>2) Morada entrega + piso/elevador</p><p>3) Lista de itens grandes</p><p>4) Data/horário desejado</p>
+        <div class="pills" style="margin-top:10px">
+          <span class="pill">Orçamento claro</span><span class="pill">Proteção</span><span class="pill">Sequência de carga</span><span class="pill">Menos tempo parado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="grid2">
+        <div class="card cardPad">
+          <h2 class="h2" style="margin-top:0">Zonas e bairros onde atuamos com frequência</h2>
+          <ul><li>Amadora (Centro)</li>
+<li>Falagueira / Venda Nova</li>
+<li>Venteira</li>
+<li>Mina de Água</li>
+<li>Reboleira</li>
+<li>Alfragide</li>
+<li>Damaia</li>
+<li>Zonas limítrofes (conforme rota)</li></ul>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+            <a class="btn" href="/mudancas-em-lisboa/">Ver página Lisboa</a>
+            <a class="btn" href="/#contacto">Pedir orçamento</a>
+          </div>
+        </div>
+
+        <div class="card cardPad">
+          <h2 class="h2" style="margin-top:0">Serviços disponíveis em Amadora</h2>
+          <ul><li>Mudanças residenciais (T0–T4)</li>
+<li>Mudanças de escritório e pequenas empresas</li>
+<li>Embalamento e proteção (parcial ou completo)</li>
+<li>Desmontagem e montagem de mobiliário</li>
+<li>Transporte de itens pesados (sofás, frigoríficos, máquinas)</li>
+<li>Mudanças urgentes (mediante disponibilidade)</li></ul>
+          <p class="muted">Se houver itens sensíveis (vidro, eletrónica, obras, instrumentos), avise no pedido para reforçarmos proteção e fixação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card cardPad">
+        <h2 class="h2" style="margin-top:0">Perguntas frequentes — Mudanças em Amadora</h2>
+        
+<div class="faqItem">
+  <button class="faqQ" type="button">Quanto custa uma mudança na Amadora?</button>
+  <div class="faqA"><p>Depende do volume, pisos, elevador e acessos/estacionamento. Com as duas moradas, piso e lista de itens grandes, conseguimos dar um orçamento realista e objetivo.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">Fazem mudanças em prédios sem elevador?</button>
+  <div class="faqA"><p>Sim. Ajustamos equipa e tempo de serviço para escadas e patamares, com proteção reforçada para evitar danos em paredes e móveis.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">Ajudam com desmontagem e montagem?</button>
+  <div class="faqA"><p>Sim. Indicando os móveis (roupeiros, camas, mesas), planeamos ferramentas e tempo para desmontar e montar no destino.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">Posso fazer a mudança ao fim de semana?</button>
+  <div class="faqA"><p>Normalmente sim, conforme agenda. Em condomínios, confirme horários e regras para utilização de elevadores e áreas comuns.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">Que informação devo enviar para orçamento rápido?</button>
+  <div class="faqA"><p>Moradas, piso/elevador, itens grandes, se há escadas e a data desejada. Se houver acesso difícil ou pouco estacionamento, mencione isso também.</p></div>
+</div>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <a class="ctaBtn" data-wa="" href="#">Falar no WhatsApp</a>
+          <a class="ctaBtn" href="/mudancas-em-lisboa/" style="background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)">Voltar para Lisboa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <div class="h3" style="margin:0 0 8px">Fagundes Transportes</div>
+          <p class="muted">Mudanças em Amadora, Lisboa e Portugal. Serviço com planeamento, proteção e suporte por WhatsApp.</p>
+        </div>
+        <div>
+          <div class="h3" style="margin:0 0 8px">Links</div>
+          <div class="footerLinks">
+            <a href="/mudancas-em-lisboa/">Mudanças em Lisboa</a>
+            <a href="/mudancas-em-portugal/">Mudanças em Portugal</a>
+            <a href="/servicos/transporte-de-moveis/">Serviços</a>
+            <a href="/nacional/">Nacional</a>
+          </div>
+        </div>
+      </div>
+      <div class="small" style="margin-top:8px">
+            <a href="/termos/">Termos</a> · <a href="/privacidade/">Privacidade</a> · <a href="/cookies/">Cookies</a>
+          </div>
+      <div class="muted" style="margin-top:14px">© 2026 Fagundes Transportes</div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site-config.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "name": "Fagundes Transportes", "url": "https://www.fagundestransportes.pt", "areaServed": ["Amadora", "Lisboa", "Grande Lisboa"], "telephone": "+351919760696", "priceRange": "€€", "serviceType": ["Mudanças residenciais", "Mudanças comerciais", "Transporte de móveis", "Mudanças urgentes"]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto custa uma mudança na Amadora?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do volume, pisos, elevador e acessos/estacionamento. Com as duas moradas, piso e lista de itens grandes, conseguimos dar um orçamento realista e objetivo."}}, {"@type": "Question", "name": "Fazem mudanças em prédios sem elevador?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Ajustamos equipa e tempo de serviço para escadas e patamares, com proteção reforçada para evitar danos em paredes e móveis."}}, {"@type": "Question", "name": "Ajudam com desmontagem e montagem?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Indicando os móveis (roupeiros, camas, mesas), planeamos ferramentas e tempo para desmontar e montar no destino."}}, {"@type": "Question", "name": "Posso fazer a mudança ao fim de semana?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente sim, conforme agenda. Em condomínios, confirme horários e regras para utilização de elevadores e áreas comuns."}}, {"@type": "Question", "name": "Que informação devo enviar para orçamento rápido?", "acceptedAnswer": {"@type": "Answer", "text": "Moradas, piso/elevador, itens grandes, se há escadas e a data desejada. Se houver acesso difícil ou pouco estacionamento, mencione isso também."}}]}</script>
+  <script>
+    // FAQ toggle (não interfere no resto do site)
+    document.querySelectorAll('.faqItem .faqQ').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faqItem');
+        item.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 </html>

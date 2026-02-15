@@ -1,55 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ✅ SEO: Título mais forte (Odivelas + Grande Lisboa + marca) -->
-  <title>Mudanças em Odivelas (Grande Lisboa) | Fagundes Transportes</title>
-
-  <!-- ✅ SEO: Description específica para Odivelas (mais intenção de compra) -->
-  <meta name="description" content="Mudanças em Odivelas com equipa experiente, proteção adequada e orçamento rápido por WhatsApp. Mudanças residenciais, comerciais e transporte de móveis em Odivelas e Grande Lisboa. Também realizamos mudanças nacionais." />
-
-  <!-- ✅ SEO: Canonical tem de ser a URL real desta página (ajuste para sua estrutura) -->
-  <link rel="canonical" href="https://www.fagundestransportes.pt/mudancas-em-lisboa/odivelas/" />
-
-  <meta name="robots" content="index, follow" />
-  <meta property="og:type" content="website" />
-
-  <!-- ✅ SEO: Open Graph alinhado com Odivelas -->
-  <meta property="og:title" content="Mudanças em Odivelas | Fagundes Transportes" />
-  <meta property="og:description" content="Mudanças em Odivelas com orçamento rápido por WhatsApp. Mudanças residenciais, comerciais e transporte de móveis em Odivelas e Grande Lisboa." />
-  <meta property="og:url" content="https://www.fagundestransportes.pt/mudancas-em-lisboa/odivelas/" />
-
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <script src="/assets/js/site-config.js" defer></script>
-  <script src="/assets/js/main.js" defer></script>
-
-  <!-- ✅ SEO: schema com Odivelas/Grande Lisboa (sem mexer em layout) -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MovingCompany","name":"Italo Fagundes Transportes","url":"https://www.fagundestransportes.pt","areaServed":["Odivelas","Lisboa","Grande Lisboa","Amadora","Sintra","Loures","Cascais","Porto","Alentejo","Algarve"],"telephone":"+351919760696","sameAs":[],"priceRange":"€€","serviceType":["Mudanças residenciais","Mudanças comerciais","Transporte de móveis","Mudanças urgentes"],"contactPoint":{"@type":"ContactPoint","telephone":"+351919760696","contactType":"customer service","availableLanguage":["pt-PT"]}}
-  </script>
-
-  <!-- ✅ SEO: FAQ alinhado com Odivelas -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto custa uma mudança em Odivelas?","acceptedAnswer":{"@type":"Answer","text":"O valor depende do volume, acessos (andar/elevador), distância e serviços (embalagem/desmontagem). Envie detalhes por WhatsApp para um orçamento rápido e claro para mudanças em Odivelas e Grande Lisboa."}},{"@type":"Question","name":"Fazem mudanças urgentes em Odivelas?","acceptedAnswer":{"@type":"Answer","text":"Sim. Quando há disponibilidade, atendemos pedidos urgentes e também ao fim de semana."}},{"@type":"Question","name":"Atendem Algarve e Alentejo?","acceptedAnswer":{"@type":"Answer","text":"Sim. Fazemos mudanças nacionais com planeamento e logística para Algarve e Alentejo."}}]}
-  </script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mudanças em Odivelas | Fagundes Transportes (Lisboa)</title>
+  <meta name="description" content="Mudanças em Odivelas com foco em famílias e condomínios: organização por divisão, proteção de áreas comuns e montagem no destino."/>
+  <link rel="canonical" href="https://www.fagundestransportes.pt/mudancas-em-lisboa/odivelas/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Mudanças em Odivelas | Fagundes Transportes (Lisboa)"/>
+  <meta property="og:description" content="Mudanças em Odivelas com foco em famílias e condomínios: organização por divisão, proteção de áreas comuns e montagem no destino."/>
+  <meta property="og:url" content="https://www.fagundestransportes.pt/mudancas-em-lisboa/odivelas/"/>
+  <meta property="og:image" content="https://www.fagundestransportes.pt/assets/img/odivelas.jpg"/>
+  <link rel="stylesheet" href="/assets/css/styles.css"/>
+  <style>
+    /* HERO estendido só nesta página */
+    .cityHeroImgWrap{border-radius:16px; overflow:hidden; border:1px solid var(--border);}
+    .cityHeroImg{width:100%; height: clamp(240px, 32vw, 420px); object-fit: cover; display:block;}
+    @media (max-width: 520px){ .cityHeroImg{height: 240px;} }
+    /* FAQ compatível com o JS/CSS existente (se houver) */
+    .faqItem{border:1px solid var(--border); border-radius:14px; padding:10px 12px; background: rgba(255,255,255,.03); margin:10px 0;}
+    .faqQ{width:100%; text-align:left; background:transparent; border:0; color:var(--text); font-weight:800; font-size:16px; padding:6px 0; cursor:pointer;}
+    .faqA{display:none; padding-top:6px; color:var(--muted);}
+    .faqItem.open .faqA{display:block;}
+  </style>
 </head>
-
 <body>
   <div class="topbar">
     <div class="container">
       <div class="nav">
         <a class="brand" href="/">
-  <img 
-    src="/assets/img/logo-mudancas.png"
-    alt="Fagundes Transportes - Mudanças em Portugal"
-    class="brandLogo"
-  >
-  <span class="brandText">
-    Fagundes Transportes 
-  </span>
-</a>
+          <img class="brandLogo" src="/assets/img/logo-mudancas.png" alt="Fagundes Transportes - Mudanças em Portugal"/>
+          <span class="brandText">Fagundes Transportes</span>
+        </a>
         <div class="menu">
           <a href="/mudancas-em-lisboa/">Lisboa</a>
           <a href="/mudancas-no-porto/">Porto</a>
@@ -58,170 +40,34 @@
           <a href="/servicos/transporte-de-moveis/">Serviços</a>
           <a href="/nacional/">Nacional</a>
         </div>
-
-        <a class="btn" href="https://simulador.fagundestransportes.pt/simulador
-" target="_blank" rel="noopener noreferrer">
-  Simular Orçamento Agora
-</a>
+        <a class="btn" href="https://simulador.fagundestransportes.pt/simulador" target="_blank" rel="noopener noreferrer">Simular Orçamento Agora</a>
       </div>
     </div>
   </div>
 
   <header class="hero">
     <div class="container">
-      <div class="breadcrumb"><a href="/">Início</a> / <a href="/mudancas-em-lisboa/">Lisboa</a> / Odivelas</div>
+      <div class="breadcrumb"><a href="/">Início</a> / <a href="/mudancas-em-lisboa/">Mudanças em Lisboa</a> / Odivelas</div>
+
       <div class="heroGrid" style="margin-top:14px">
         <div>
-          <!-- ✅ SEO: H1 reforçado (Odivelas + Grande Lisboa) -->
-          <h1 class="h1">Mudanças em Odivelas (Grande Lisboa)</h1>
-
-          <!-- ✅ SEO: Texto mais coerente com Odivelas (sem diminuir; apenas acrescentei) -->
-          <p class="lead">
-            Mudanças residenciais e comerciais em Odivelas com equipa experiente, proteção adequada e orçamento rápido por WhatsApp.
-            Atuamos com força local na Grande Lisboa — incluindo Odivelas, Lisboa, Amadora, Loures e Sintra — e também realizamos mudanças nacionais
-            para Alentejo, Algarve e outras regiões de Portugal, sempre com planeamento, logística e comunicação clara.
-          </p>
+          <h1 class="h1">Mudanças em Odivelas com abordagem premium e logística local</h1>
+          <p class="lead">Em Odivelas, mudanças premium passam por organização: regras de condomínio, uso de elevador e caixas por divisão para descarregar e montar com rapidez.</p>
 
           <div class="pills">
             <span class="pill">Orçamento rápido</span>
             <span class="pill">Equipa experiente</span>
             <span class="pill">Proteção e embalagem</span>
-            <span class="pill">Mudanças urgentes</span>
+            <span class="pill">Montagem/Desmontagem</span>
           </div>
+
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="ctaBtn" data-wa href="#">Falar no WhatsApp</a>
-            <a class="ctaBtn" data-greview href="https://www.fagundestransportes.pt/#avaliacoes" style="background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)">Ver avaliações</a>
+            <a class="ctaBtn" data-wa="" href="#">Falar no WhatsApp</a>
+            <a class="ctaBtn" href="/mudancas-em-lisboa/" style="background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)">Voltar para Lisboa</a>
           </div>
-        </div>
-        <div class="card cardPad">
-          <h2 class="h2" style="margin-top:0">O que incluímos</h2>
-          <div class="kpis">
-            <div class="kpi"><strong>Segurança</strong><span>manuseio cuidadoso</span></div>
-            <div class="kpi"><strong>Pontualidade</strong><span>horários combinados</span></div>
-            <div class="kpi"><strong>Transparência</strong><span>sem surpresas</span></div>
-            <div class="kpi"><strong>Suporte</strong><span>WhatsApp direto</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
 
-<section class="section"><div class="container">
-<h2 class="h2">Mudanças em Odivelas com foco local</h2>
-
-<!-- ✅ SEO: mantido + acrescentei contexto real sem mudar estrutura -->
-<p class="lead">
-Realizar mudanças em Odivelas exige conhecimento real da cidade e das suas zonas residenciais, condomínios e acessos.
-Atuamos diariamente nesta área, oferecendo mudanças residenciais, mudanças comerciais, transporte de móveis e apoio completo desde o planeamento
-até a entrega final, sempre respeitando as características locais e os horários mais convenientes para o cliente.
-</p>
-
-<!-- ✅ SEO: conteúdo extra (sem reduzir) para aumentar relevância e “autoridade” local -->
-<p>
-Odivelas tem uma mistura de áreas modernas e zonas mais antigas, com ruas residenciais, acessos apertados e regras específicas em alguns condomínios.
-Por isso, o planeamento é essencial: avaliamos volume, elevador, piso/andar, distância de carregamento e possibilidades de estacionamento,
-para que o serviço seja mais rápido e seguro no dia da mudança.
-</p>
-
-<h3>Bairros atendidos em Odivelas</h3>
-<ul class="list"><li>Ramada</li><li>Pontinha</li><li>Póvoa de Santo Adrião</li><li>Colinas do Cruzeiro</li></ul>
-
-<!-- ✅ SEO: acréscimo curto e útil -->
-<p>
-Também atendemos outras zonas de Odivelas e arredores conforme a morada de recolha e entrega. Se não encontrar o seu bairro na lista,
-envie a localização por WhatsApp e confirmamos rapidamente a disponibilidade.
-</p>
-
-<h3>Acessos e circulação</h3>
-<p>
-Mistura de áreas modernas e antigas, com acessos apertados. Em horários de maior movimento, algumas zonas ficam mais congestionadas,
-por isso ajudamos a escolher o melhor período para carga e descarga, reduzindo tempo parado e evitando imprevistos.
-</p>
-
-<h3>Tipo de imóvel mais comum</h3>
-<p>
-Apartamentos e condomínios residenciais. Em mudanças em Odivelas, é frequente existir regulamento de condomínio,
-horários para elevador/serviço e necessidade de proteger áreas comuns — e a nossa equipa já está habituada a esse tipo de operação.
-</p>
-
-<h3>Problemas locais frequentes</h3>
-<ul class="list"><li>Regras de condomínio</li><li>Estacionamento restrito</li><li>Acessos limitados</li></ul>
-
-<!-- ✅ SEO: complemento (sem mexer em layout) -->
-<p>
-Para evitar danos e acelerar o serviço, utilizamos proteção adequada de móveis e eletrodomésticos e fazemos o manuseio cuidadoso em escadas,
-corredores e elevadores. A organização reduz riscos e garante uma mudança mais tranquila.
-</p>
-
-<h3>Tipos de mudanças mais comuns em Odivelas</h3>
-<p>
-Mudanças familiares, mudanças em condomínios e transporte de móveis. Também realizamos mudanças de apartamentos T1/T2 e T3,
-mudanças de escritórios e recolhas pontuais na Grande Lisboa, quando necessário.
-</p>
-
-<h3>Como funciona o nosso serviço em Odivelas</h3>
-<p>
-O processo começa com um contacto simples por WhatsApp. Após recebermos as informações,
-avaliamos o volume, acessos e definimos a equipa e viatura adequadas. No dia da mudança,
-executamos todo o serviço com organização e cuidado.
-</p>
-
-<!-- ✅ SEO: acréscimo de conversão e precisão de orçamento -->
-<p>
-Para um orçamento mais rápido e preciso em Odivelas, envie: morada de recolha e entrega, andar, se existe elevador, data desejada
-e uma descrição do volume (ou fotos). Assim conseguimos responder com mais clareza e sem surpresas.
-</p>
-
-<p>
-Para entender a estrutura completa do nosso serviço regional, consulte a página
-<a href="/mudancas-em-lisboa/">Mudanças em Lisboa</a>.
-</p>
-
-<section class="section">
-    <div class="container">
-      <div class="banner">
-        <div>
-          <h2 class="h2" style="margin:0">Quer uma mudança sem stress para Odivelas?</h2>
-          <p>Envie a sua morada, andar e data. Respondemos rápido com um orçamento claro.</p>
-        </div>
-        <a class="ctaBtn" data-wa href="#">Falar no WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-<h3>Perguntas frequentes sobre mudanças em Odivelas</h3>
-<div class="faq">
-<details><summary>Atendem prédios sem elevador?</summary><div class="small">Sim, acontece em algumas zonas de Odivelas e estamos preparados com equipa e planeamento adequados.</div></details>
-<details><summary>Fazem mudanças rápidas?</summary><div class="small">Sim, conforme disponibilidade e volume do serviço. Se for urgente, envie as moradas e data por WhatsApp.</div></details>
-<details><summary>Atendem todos os bairros?</summary><div class="small">Sim, atendemos toda a cidade de Odivelas e zonas próximas na Grande Lisboa.</div></details>
-<details><summary>Trabalham com condomínios?</summary><div class="small">Sim, respeitando regras locais, horários e proteção de áreas comuns quando necessário.</div></details>
-<details><summary>Como pedir orçamento?</summary><div class="small">Basta enviar moradas, andar, data e volume (ou fotos) por WhatsApp para um orçamento rápido.</div></details>
-</div>
-</div>
-</section>
-
-<!-- ✅ Footer intacto (não mexi) -->
-<footer class="footer">
-    <div class="container">
-      <div class="footerGrid">
-        <div>
-          <div style="font-weight:900;color:var(--text)">Italo Fagundes Transportes</div>
-          <div class="small">Mudanças e transportes em Lisboa, Porto, Alentejo, Algarve. Atendimento por WhatsApp: +351919760696.</div>
-          <div class="small" style="margin-top:8px">
-            <a href="/termos/">Termos</a> · <a href="/privacidade/">Privacidade</a> · <a href="/cookies/">Cookies</a>
-          </div>
-        </div>
-        <div>
-          <div class="small"><strong>Serviços</strong></div>
-          <div class="small"><a href="/servicos/mudancas-residenciais/">Residenciais</a></div>
-          <div class="small"><a href="/servicos/mudancas-comerciais/">Comerciais</a></div>
-          <div class="small"><a href="/servicos/transporte-de-moveis/">Transporte de móveis</a></div>
-          <div class="small"><a href="/servicos/mudancas-urgentes/">Urgentes</a></div>
-          <div class="small"><a href="/servicos/mudancas-fim-de-semana/">Fim de semana</a></div>
-        </div>
-      </div>
-    
-<div class="social-fixed" style="display:flex;gap:12px;justify-content:center;margin:24px 0">
+          <p class="muted" style="margin-top:10px"> Diga-nos: moradas, piso/elevador e itens grandes — respondemos com clareza.</p>
+          <div class="social-fixed" style="display:flex;gap:12px;justify-content:center;margin:24px 0">
   <a href="https://www.instagram.com/fagundestransportes/" target="_blank" aria-label="Instagram">
     <img src="../../assets/img/instagram.svg" width="50" alt="Instagram">
   </a>
@@ -229,11 +75,170 @@ Para entender a estrutura completa do nosso serviço regional, consulte a págin
     <img src="../../assets/img/facebook.svg" width="50" alt="Facebook">
   </a>
 </div>
+        </div>
 
-<div class="notice" style="margin-bottom: 50px; text-align: center;">
-      © 2026 Italo Fagundes Transportes. Todos os direitos reservados.
+        <div class="card cardPad">
+          <h2 class="h2" style="margin-top:0; text-align:center;">Odivelas</h2>
+          <div class="cityHeroImgWrap">
+            <img class="cityHeroImg" src="/assets/img/odivelas.jpg" alt="Mudanças em Odivelas — condomínios e organização por divisão" loading="eager"/>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+<section class="section">
+  <div class="container">
+    <div class="grid2">
+      <div class="card cardPad">
+        <h2 class="h2" style="margin-top:0">Odivelas: mudanças em condomínios pedem organização e respeito por regras</h2>
+        <p>Odivelas tem muitas urbanizações e condomínios familiares. Isso muda o padrão do serviço: elevadores, portaria, horários e regras de utilização de áreas comuns podem determinar o ritmo da mudança.</p><p>Uma página premium de Odivelas precisa mostrar exatamente isso: como reduzimos atrito com condomínio, como protegemos paredes/cantos e como organizamos caixas por divisão para que o destino fique funcional rápido.</p><p>Aqui a diferença não é “carregar mais rápido”. É fazer uma mudança limpa, previsível e sem stress para a família — com montagem do essencial no próprio dia.</p>
+      </div>
+      <div class="card cardPad">
+        <h3 class="h3" style="margin-top:0">O que torna Odivelas diferente</h3>
+        <p>• Condominios com regras (horários/elevador).</p><p>• Acessos por garagem e percursos internos.</p><p>• Perfil familiar: mais itens frágeis e organização por divisão.</p><p>• Prioridade: voltar à rotina no mesmo dia.</p>
+        <div class="pills" style="margin-top:10px">
+          <span class="pill">Condomínios</span><span class="pill">Famílias</span><span class="pill">Organização</span><span class="pill">Montagem essencial</span>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="grid2">
+      <div class="card cardPad">
+        <h2 class="h2" style="margin-top:0">Execução premium: caixas por divisão + prioridade (essencial primeiro)</h2>
+        <p>O método que mais reduz tempo (e confusão) em Odivelas é simples: etiquetar por divisão e prioridade. Cozinha, quartos e sala seguem separados; “essenciais” (camas, roupa, higiene) são identificados para descarregar primeiro.</p><p>Se o prédio exige proteção de áreas comuns, aplicamos proteção em cantos e zonas de passagem. E quando há garagem, confirmamos altura/entrada e o percurso até elevador/arrecadação para evitar improvisos.</p><p>No destino, descarregamos por divisão e montamos primeiro cama, frigorífico e mesa — para a família ficar operativa ainda no mesmo dia.</p>
+      </div>
+      <div class="card cardPad">
+        <h3 class="h3" style="margin-top:0">Dica rápida para condomínios</h3>
+        <p>• Informe regras e horários permitidos.</p><p>• Se houver, reserve elevador com antecedência.</p><p>• Confirme acesso por garagem (altura/entrada).</p><p>• Avise se há portaria ou senha/código.</p>
+        <div class="pills" style="margin-top:10px">
+          <span class="pill">Etiquetas</span><span class="pill">Sem confusão</span><span class="pill">Proteção áreas comuns</span><span class="pill">Fluxo rápido</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="grid2">
+        <div class="card cardPad">
+          <h2 class="h2" style="margin-top:0">Zonas e bairros onde atuamos com frequência</h2>
+          
+          <ul><li>Odivelas (Centro)</li>
+<li>Colinas do Cruzeiro</li>
+<li>Ramada</li>
+<li>Póvoa de Santo Adrião</li>
+<li>Olival Basto</li>
+<li>Caneças</li>
+<li>Famões</li>
+<li>Zonas limítrofes (conforme rota)</li></ul>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+            <a class="btn" href="/mudancas-em-lisboa/">Ver página Lisboa</a>
+            <a class="btn" href="/#contacto">Pedir orçamento</a>
+          </div>
+        </div>
+
+        <div class="card cardPad">
+          <h2 class="h2" style="margin-top:0">Serviços disponíveis em Odivelas</h2>
+          <ul><li>Mudanças residenciais para famílias e casais</li>
+<li>Mudanças em condomínios (coordenação e proteção)</li>
+<li>Embalamento completo ou parcial</li>
+<li>Desmontagem/montagem (camas, roupeiros, mesas)</li>
+<li>Transporte de eletrodomésticos e itens frágeis</li>
+<li>Serviço expresso/urgente (mediante disponibilidade)</li></ul>
+          <p class="muted">Se houver itens sensíveis (vidro, eletrónica, obras, instrumentos), avise no pedido para reforçarmos proteção e fixação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card cardPad">
+        <h2 class="h2" style="margin-top:0">Perguntas frequentes — Mudanças em Odivelas</h2>
+        
+<div class="faqItem">
+  <button class="faqQ" type="button">Vocês conseguem trabalhar com regras de condomínio?</button>
+  <div class="faqA"><p>Sim. Se nos indicar as regras (horários, elevador, proteção), adaptamos o plano e evitamos problemas com portaria e vizinhos.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">Como organizam para descarregar rápido no destino?</button>
+  <div class="faqA"><p>Etiquetamos por divisão e prioridade. Assim descarregamos por zonas e montamos o essencial primeiro.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">É possível usar a garagem para carga/descarga?</button>
+  <div class="faqA"><p>Na maioria dos casos sim. Precisamos confirmar altura/entrada e o percurso interno até ao elevador ou arrecadação.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">Fazem desmontagem e montagem no mesmo dia?</button>
+  <div class="faqA"><p>Sim. Planeamos para montar o essencial primeiro, especialmente em mudanças familiares.</p></div>
+</div>
+
+
+<div class="faqItem">
+  <button class="faqQ" type="button">O que devo preparar antes da equipa chegar?</button>
+  <div class="faqA"><p>Separar documentos/valores, deixar caminho livre e avisar sobre itens frágeis. Se contratar embalamento, tratamos do resto.</p></div>
+</div>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <a class="ctaBtn" data-wa="" href="#">Falar no WhatsApp</a>
+          <a class="ctaBtn" href="/mudancas-em-lisboa/" style="background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border)">Voltar para Lisboa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <div class="h3" style="margin:0 0 8px">Fagundes Transportes</div>
+          <p class="muted">Mudanças em Odivelas, Lisboa e Portugal. Serviço com planeamento, proteção e suporte por WhatsApp.</p>
+        </div>
+        <div>
+          <div class="h3" style="margin:0 0 8px">Links</div>
+          <div class="footerLinks">
+            <a href="/mudancas-em-lisboa/">Mudanças em Lisboa</a>
+            <a href="/mudancas-em-portugal/">Mudanças em Portugal</a>
+            <a href="/servicos/transporte-de-moveis/">Serviços</a>
+            <a href="/nacional/">Nacional</a>
+          </div>
+        </div>
+      </div>
+      <div class="small" style="margin-top:8px">
+            <a href="/termos/">Termos</a> · <a href="/privacidade/">Privacidade</a> · <a href="/cookies/">Cookies</a>
+          </div>
+      <div class="muted" style="margin-top:14px">© 2026 Fagundes Transportes</div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site-config.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "name": "Italo Fagundes Transportes", "url": "https://www.fagundestransportes.pt", "areaServed": ["Odivelas", "Lisboa", "Grande Lisboa"], "telephone": "+351919760696", "priceRange": "€€", "serviceType": ["Mudanças residenciais", "Mudanças comerciais", "Transporte de móveis", "Mudanças urgentes"]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Vocês conseguem trabalhar com regras de condomínio?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Se nos indicar as regras (horários, elevador, proteção), adaptamos o plano e evitamos problemas com portaria e vizinhos."}}, {"@type": "Question", "name": "Como organizam para descarregar rápido no destino?", "acceptedAnswer": {"@type": "Answer", "text": "Etiquetamos por divisão e prioridade. Assim descarregamos por zonas e montamos o essencial primeiro."}}, {"@type": "Question", "name": "É possível usar a garagem para carga/descarga?", "acceptedAnswer": {"@type": "Answer", "text": "Na maioria dos casos sim. Precisamos confirmar altura/entrada e o percurso interno até ao elevador ou arrecadação."}}, {"@type": "Question", "name": "Fazem desmontagem e montagem no mesmo dia?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Planeamos para montar o essencial primeiro, especialmente em mudanças familiares."}}, {"@type": "Question", "name": "O que devo preparar antes da equipa chegar?", "acceptedAnswer": {"@type": "Answer", "text": "Separar documentos/valores, deixar caminho livre e avisar sobre itens frágeis. Se contratar embalamento, tratamos do resto."}}]}</script>
+  <script>
+    // FAQ toggle (não interfere no resto do site)
+    document.querySelectorAll('.faqItem .faqQ').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faqItem');
+        item.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 </html>
