@@ -12,6 +12,11 @@
   <meta property="og:title" content="Serviços de Mudanças e Transportes | Fagundes Transportes" />
   <meta property="og:description" content="Mudanças residenciais, comerciais, transporte de móveis e muito mais. Peça orçamento rápido pelo WhatsApp." />
   <meta property="og:url" content="https://www.fagundestransportes.pt/servicos/" />
+  <meta property="og:image" content="https://www.fagundestransportes.pt/assets/img/og/servicos.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Serviços de Mudanças e Transportes | Fagundes Transportes" />
+  <meta name="twitter:description" content="Mudanças residenciais, comerciais, transporte de móveis e muito mais. Peça orçamento rápido pelo WhatsApp." />
+  <meta name="twitter:image" content="https://www.fagundestransportes.pt/assets/img/og/servicos.jpg" />
 
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <script src="/assets/js/site-config.js" defer></script>
@@ -41,6 +46,153 @@
     }
   }
   </script>
+
+
+<style>
+/* ====== SERVICES & WORK GALLERY (3 em 3) ====== */
+.section {
+  padding: 56px 20px;
+}
+.section h2 {
+  margin: 0 0 18px 0;
+}
+.muted {
+  color: rgba(226, 232, 240, 0.85);
+  font-size: 14px;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+
+/* grid 3 em 3 (desktop), 2 (tablet), 1 (mobile) */
+.grid-3 {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 980px) {
+  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* card padrão */
+.card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(21, 41, 62, 0.95), rgba(12, 27, 41, 0.95));
+  box-shadow: 0 14px 35px rgba(0,0,0,0.28);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 46px rgba(0,0,0,0.38);
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+/* área da imagem - SEMPRE no mesmo tamanho e centrada */
+.card-media{
+  height: 400px;
+  width: 100%;
+  background: rgba(2, 6, 23, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: center;
+}
+.card-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* placeholder (quando não tiver foto ainda) */
+.card-media .placeholder{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(226, 232, 240, 0.85);
+  font-size: 14px;
+  border: 2px dashed rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  margin: 14px;
+}
+.card-media .placeholder .mini{
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* conteúdo */
+.card-body{
+  padding: 18px 18px 20px 18px;
+}
+.card-title{
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+.card-desc{
+  margin: 0 0 14px 0;
+  font-size: 14px;
+  color: rgba(226, 232, 240, 0.88);
+  line-height: 1.45;
+}
+.card-actions{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* usa seus botões existentes; se não tiver, melhora o visual */
+.card-actions a{
+  text-decoration:none;
+}
+
+/* galeria: cards só com imagem (clique futuro) */
+.work-card .card-media{ height: 400px; }
+.work-card .card-body{ padding: 12px 16px 16px 16px; }
+.work-card .card-title{ font-size: 15px; margin-bottom: 0; opacity: 0.95; }
+
+/* ====== CARROSSEL (3 em 3) ====== */
+.carousel { margin-top: 18px; }
+.carousel-viewport { overflow: hidden; border-radius: 18px; }
+.carousel-track {
+  display: flex;
+  gap: 22px;
+  will-change: transform;
+  transition: transform 600ms ease;
+  padding-bottom: 2px;
+}
+.carousel-slide { flex: 0 0 calc((100% - 44px) / 3); } /* 3 por vez (gap 22px x2) */
+@media (max-width: 980px) { .carousel-slide { flex-basis: calc((100% - 22px) / 2); } } /* 2 por vez */
+@media (max-width: 620px) { .carousel-slide { flex-basis: 100%; } } /* 1 por vez */
+
+.carousel-dots{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-top: 14px;
+}
+.carousel-dots button{
+  width: 10px; height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(148, 163, 184, 0.18);
+  cursor:pointer;
+  padding:0;
+}
+.carousel-dots button[aria-current="true"]{
+  background: #f7c600;
+  border-color: rgba(0,0,0,0.12);
+}
+</style>
+
 </head>
 <body class="page-servicos">
 
@@ -107,137 +259,141 @@
     </div>
   </header>
 
-  <section class="section" id="lista-servicos">
-    <div class="container">
-      <h2 class="h2">Nossos serviços</h2>
-      <div class="serviceGrid">
 
-        <a class="serviceCard" href="/servicos/mudancas-residenciais/">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Mudanças residenciais</h3>
-            <p>Apartamentos e moradias com proteção e organização.</p>
-            <span class="serviceLink">Ver detalhes →</span>
-          </div>
-        </a>
+<section class="section" id="servicos">
+  <h2>Nossos serviços</h2>
+   <div class="grid-3">
 
-        <a class="serviceCard" href="/servicos/mudancas-comerciais/">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Mudanças comerciais</h3>
-            <p>Escritórios e lojas: logística e execução com rapidez.</p>
-            <span class="serviceLink">Ver detalhes →</span>
-          </div>
-        </a>
-
-        <a class="serviceCard" href="/servicos/transporte-de-moveis/">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Transporte de móveis</h3>
-            <p>Fretes, recolhas e entregas com agendamento rápido.</p>
-            <span class="serviceLink">Ver detalhes →</span>
-          </div>
-        </a>
-
-        <a class="serviceCard" href="/servicos/mudancas-urgentes/">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Mudanças urgentes</h3>
-            <p>Precisa para hoje/amanhã? Consulte disponibilidade.</p>
-            <span class="serviceLink">Ver detalhes →</span>
-          </div>
-        </a>
-
-        <a class="serviceCard" href="/servicos/mudancas-fim-de-semana/">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Mudanças ao fim de semana</h3>
-            <p>Agende sábado/domingo com equipa preparada.</p>
-            <span class="serviceLink">Ver detalhes →</span>
-          </div>
-        </a>
-
-        <a class="serviceCard" data-wa href="#">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Embalagem e proteção</h3>
-            <p>Plástico bolha, mantas e proteção de itens frágeis.</p>
-            <span class="serviceLink">Pedir orçamento →</span>
-          </div>
-        </a>
-
-        <a class="serviceCard" data-wa href="#">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Montagem e desmontagem</h3>
-            <p>Armários, camas e móveis — desmonta e monta com cuidado.</p>
-            <span class="serviceLink">Pedir orçamento →</span>
-          </div>
-        </a>
-
-        <a class="serviceCard" data-wa href="#">
-          <div class="serviceImgWrap">
-            <div class="serviceThumb" aria-hidden="true"><span>Foto</span></div>
-          </div>
-          <div class="serviceBody">
-            <h3>Plataforma elevatória</h3>
-            <p>Ideal para prédios sem elevador e acessos difíceis.</p>
-            <span class="serviceLink">Pedir orçamento →</span>
-          </div>
-        </a>
-
+    <!-- 1 -->
+    <article class="card">
+      <div class="card-media">
+        <img src="/assets/img/mudancas1.webp" alt="Mudanças residenciais">
       </div>
-    </div>
-  </section>
-
-
-  <section class="section sectionAlt">
-    <div class="container">
-      <h2 class="h2">Galeria de serviços </h2>
-      
-
-      <div class="galleryGrid" aria-label="Galeria de fotos dos serviços">
-        <div class="gallerySlot" data-slot="1"><span>Foto 1</span></div>
-        <div class="gallerySlot" data-slot="2"><span>Foto 2</span></div>
-        <div class="gallerySlot" data-slot="3"><span>Foto 3</span></div>
-        <div class="gallerySlot" data-slot="4"><span>Foto 4</span></div>
-        <div class="gallerySlot" data-slot="5"><span>Foto 5</span></div>
-        <div class="gallerySlot" data-slot="6"><span>Foto 6</span></div>
-        <div class="gallerySlot" data-slot="7"><span>Foto 7</span></div>
-        <div class="gallerySlot" data-slot="8"><span>Foto 8</span></div>
-        <div class="gallerySlot" data-slot="9"><span>Foto 9</span></div>
-        <div class="gallerySlot" data-slot="10"><span>Foto 10</span></div>
-        <div class="gallerySlot" data-slot="11"><span>Foto 11</span></div>
-        <div class="gallerySlot" data-slot="12"><span>Foto 12</span></div>
-        <div class="gallerySlot" data-slot="13"><span>Foto 13</span></div>
-        <div class="gallerySlot" data-slot="14"><span>Foto 14</span></div>
-        <div class="gallerySlot" data-slot="15"><span>Foto 15</span></div>
-        <div class="gallerySlot" data-slot="16"><span>Foto 16</span></div>
-        <div class="gallerySlot" data-slot="17"><span>Foto 17</span></div>
-        <div class="gallerySlot" data-slot="18"><span>Foto 18</span></div>
+      <div class="card-body">
+        <h3 class="card-title">Mudanças residenciais</h3>
+        <p class="card-desc">Apartamentos e moradias com proteção, organização e entrega segura.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Ver detalhes →</a>
+        </div>
       </div>
+    </article>
 
-      <div class="galleryHint">
-
+    <!-- 2 -->
+    <article class="card">
+      <div class="card-media">
+        <img src="/assets/img/mudancas2.webp" alt="Mudanças comerciais e escritórios">
       </div>
-    </div>
-  </section>
+      <div class="card-body">
+        <h3 class="card-title">Mudanças comerciais e escritórios</h3>
+        <p class="card-desc">Logística e execução com rapidez, cuidado e pontualidade.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Ver detalhes →</a>
+        </div>
+      </div>
+    </article>
 
-  <section class="section">
+    <!-- 3 -->
+    <article class="card">
+      <div class="card-media">
+        <img src="/assets/img/mudancas3.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Transporte de móveis e fretes</h3>
+        <p class="card-desc">Fretes, recolhas e entregas com agendamento rápido.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Ver detalhes →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4 (sem foto ainda) -->
+    <article class="card">
+      <div class="card-media">
+          <img src="/assets/img/mudancas2.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body"> 
+        <h3 class="card-title">Mudanças urgentes</h3>
+        <p class="card-desc">Precisa para hoje/amanhã? Consulte disponibilidade.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Ver detalhes →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5 (sem foto ainda) -->
+    <article class="card">
+        <div class="card-media">
+          <img src="/assets/img/mudancas1.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Mudanças ao fim de semana</h3>
+        <p class="card-desc">Agende sábado/domingo com equipa preparada.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Ver detalhes →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6 (sem foto ainda) -->
+    <article class="card">
+      <div class="card-media">
+          <img src="/assets/img/mudancas2.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Embalagem e proteção</h3>
+        <p class="card-desc">Plástico bolha, mantas e proteção de itens frágeis.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Pedir orçamento →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7 (sem foto ainda) -->
+    <article class="card">
+      <div class="card-media">
+          <img src="/assets/img/mudancas1.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Montagem e desmontagem</h3>
+        <p class="card-desc">Armários, camas e móveis — desmonta e monta com cuidado.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Pedir orçamento →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8 (sem foto ainda) -->
+    <article class="card">
+      <div class="card-media">
+          <img src="/assets/img/mudancas3.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Plataforma elevatória</h3>
+        <p class="card-desc">Ideal para prédios sem elevador e acessos difíceis.</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Pedir orçamento →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9 (sem foto ainda) -->
+    <article class="card">
+      <div class="card-media">
+          <img src="/assets/img/mudancas2.webp" alt="Transporte de móveis e fretes">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Retirada e limpeza</h3>
+        <p class="card-desc">Retirada de móveis/itens e apoio pós-mudança (sob consulta).</p>
+        <div class="card-actions">
+          <a class="btn" href="#contato">Pedir orçamento →</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section">
     <div class="container">
       <h2 class="h2">Serviços em Lisboa, Amadora, Odivelas e Sintra</h2>
       <div class="card cardPad">
@@ -259,9 +415,106 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
 
-  <section class="section">
+<section class="section" id="galeria">
+  <h2>Galeria de serviços</h2>
+  <p class="muted">Fotos reais do nosso trabalho. O carrossel passa automaticamente (3 em 3 no computador).</p>
+
+  <div class="carousel" data-carousel>
+    <div class="carousel-viewport">
+      <div class="carousel-track" data-track>
+<article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas1.webp" alt="Mudança 1"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 1</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 2"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 2</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas1.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas1.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas1.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas2.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas1.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+        <article class="card work-card carousel-slide">
+          <div class="card-media"><img src="/assets/img/mudancas3.webp" alt="Mudança 3"></div>
+          <div class="card-body"><h3 class="card-title">Mudança 3</h3></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="carousel-dots" data-dots aria-label="Navegação da galeria"></div>
+  </div>
+</section>
+<section class="section">
     <div class="container">
       <div class="banner">
         <div>
@@ -308,5 +561,113 @@
     </div>
   </footer>
 
+<script>
+(function(){
+  const root = document.querySelector('[data-carousel]');
+  if(!root) return;
+
+  const track = root.querySelector('[data-track]');
+  const dotsWrap = root.querySelector('[data-dots]');
+  const slides = Array.from(track.querySelectorAll('.carousel-slide'));
+
+  function perView(){
+    const w = window.innerWidth;
+    if (w <= 620) return 1;
+    if (w <= 980) return 2;
+    return 3;
+  }
+
+  function pageCount(){
+    return Math.max(1, Math.ceil(slides.length / perView()));
+  }
+
+  let page = 0;
+  let timer = null;
+  const intervalMs = 2600;
+
+  function buildDots(){
+    dotsWrap.innerHTML = '';
+    const pages = pageCount();
+    for(let i=0;i<pages;i++){
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Ir para grupo ' + (i+1));
+      b.addEventListener('click', () => { goTo(i); restart(); });
+      dotsWrap.appendChild(b);
+    }
+  }
+
+  function setDots(){
+    const btns = Array.from(dotsWrap.querySelectorAll('button'));
+    btns.forEach((b,i)=> b.setAttribute('aria-current', String(i===page)));
+  }
+
+  function metrics(){
+    // calcula largura real do slide + gap
+    const first = slides[0];
+    if(!first) return { step: 0 };
+    const rect = first.getBoundingClientRect();
+    const gap = parseFloat(getComputedStyle(track).gap || '0') || 0;
+    return { step: rect.width + gap };
+  }
+
+  function goTo(nextPage){
+    const pv = perView();
+    const { step } = metrics();
+    if(!step) return;
+
+    const pages = pageCount();
+    page = (nextPage + pages) % pages;
+
+    track.style.transform = 'translateX(' + (-(page * pv * step)) + 'px)';
+    setDots();
+  }
+
+  function next(){
+    goTo(page + 1);
+  }
+
+  function start(){
+    stop();
+    timer = setInterval(next, intervalMs);
+  }
+
+  function stop(){
+    if(timer) clearInterval(timer);
+    timer = null;
+  }
+
+  function restart(){
+    start();
+  }
+
+  function init(){
+    buildDots();
+    goTo(0);
+    start();
+  }
+
+  // Espera imagens carregarem (senão o cálculo de largura pode dar errado)
+  if (document.readyState === 'complete') {
+    requestAnimationFrame(init);
+  } else {
+    window.addEventListener('load', () => requestAnimationFrame(init), { once: true });
+  }
+
+  // Pause on hover (desktop)
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+
+  // Recalcular ao redimensionar
+  let resizeT = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeT);
+    resizeT = setTimeout(() => {
+      buildDots();
+      goTo(Math.min(page, pageCount()-1));
+    }, 150);
+  });
+})();
+</script>
 </body>
 </html>
