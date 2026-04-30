@@ -1,76 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://www.fagundestransportes.pt/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://www.fagundestransportes.pt/mudancas-em-portugal/</loc>
-    <lastmod>2026-01-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-em-lisboa/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/mudancas-em-portugal/</loc>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-no-porto/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-no-algarve/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-no-alentejo/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.fagundestransportes.pt/nacional/</loc>
-    <lastmod>2026-01-26</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://www.fagundestransportes.pt/mudancas-em-lisboa/odivelas/</loc>
-    <lastmod>2026-01-26</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.fagundestransportes.pt/servicos/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://www.fagundestransportes.pt/servicos/mudancas-residenciais/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/servicos/mudancas-comerciais/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/servicos/transporte-de-moveis/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/servicos/mudancas-urgentes/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/servicos/mudancas-fim-de-semana/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-em-lisboa/amadora/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://www.fagundestransportes.pt/mudancas-em-lisboa/odivelas/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-em-lisboa/sintra/</loc>
-    <lastmod>2026-01-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://www.fagundestransportes.pt/mudancas-em-lisboa/cascais/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-no-porto/gondomar/</loc>
-    <lastmod>2026-01-26</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://www.fagundestransportes.pt/mudancas-no-porto/matosinhos/</loc>
-    <lastmod>2026-01-26</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudancas-lisboa-dicas/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudancas-lisboa-guia-completo/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudancas-lisboa-escolha-de-empresa/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/transportes-de-moveis-lisboa/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudan%C3%A7as-de-apartamentos/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/como-preparar-mudan%C3%A7as/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudancas-amadora-guia/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudancas-odivelas-dicas/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fagundestransportes.pt/blog/mudancas-sintra-cuidados/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
