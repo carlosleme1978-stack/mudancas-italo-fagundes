@@ -457,26 +457,3 @@ a{color:inherit;text-decoration:none}
   .galleryGrid{grid-template-columns:1fr}
 }
 
-.fotoGrid{
-  margin-top: 24px;
-}
-
-.fotoCard{
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,.08);
-  background: rgba(255,255,255,.02);
-  transition: transform .3s ease;
-}
-
-.fotoCard:hover{
-  transform: translateY(-8px);
-  
-}
-
-.fotoCard img{
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
