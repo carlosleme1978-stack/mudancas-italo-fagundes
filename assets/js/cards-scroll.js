@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entry.target.classList.toggle("in-view", entry.isIntersecting);
     });
   }, {
-    threshold: 0.45
+    threshold: 0.75
   });
 
   cards.forEach((card) => observer.observe(card));
