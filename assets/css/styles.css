@@ -150,10 +150,46 @@ a{color:inherit;text-decoration:none}
 .h2{font-size:26px;margin:0 0 14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 
-.card.feature1 {padding:16px}
-.card.feature1 h3{margin:6px 0 6px}
-.card.feature1 p{margin:0;color:var(--muted);line-height:1.55}
-.card.feature1:hover {background:#F5C40011; border-color:rgba(245,196,0,.18); transform:translateY(-2px); color:#F5C400}
+.card.feature{
+  padding: 16px;
+  
+}
+
+.card.feature1 {
+  padding:16px;
+  transition: all 0.35s ease;
+}
+
+.card.feature1 h3 {
+  margin:6px 0 6px;
+}
+
+.card.feature1 p {
+  margin:0;
+  color:var(--muted);
+  line-height:1.55;
+}
+
+/* Computador: só muda quando passa o mouse */
+@media (min-width: 881px) {
+  .card.feature1:hover {
+    background:#F5C40011;
+    border-color:rgba(245,196,0,.18);
+    transform:translateY(-2px);
+    color:#F5C400;
+  }
+}
+
+/* Telemóvel: muda quando entra na tela no scroll */
+@media (max-width: 880px) {
+  .card.feature1.in-view {
+    background:#F5C40011;
+    border-color:rgba(245,196,0,.18);
+    transform:translateY(-2px);
+    color:#F5C400;
+  }
+}
+
 .list{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.6}
 .banner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center;padding:18px;border-radius:var(--radius);border:1px solid var(--border);background:linear-gradient(90deg,rgba(79,140,255,.18),rgba(57,217,138,.10))}
 .banner p{margin:0;color:var(--muted)}
