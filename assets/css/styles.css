@@ -130,7 +130,7 @@ a{color:inherit;text-decoration:none}
   box-shadow:var(--shadow);
   white-space:nowrap;
 }
-.ctaBtn:hover{transform:translateY(-1px)}
+.ctaBtn:hover{background:#F5C40011; border-color:rgba(245,196,0,.18); transform:translateY(-2px); color:#F5C400}
 
 /* ===== HERO / RESTO ===== */
 .hero{padding:64px 0 34px}
@@ -152,6 +152,12 @@ a{color:inherit;text-decoration:none}
 .feature{padding:16px}
 .feature h3{margin:6px 0 6px}
 .feature p{margin:0;color:var(--muted);line-height:1.55}
+
+.feature1 {padding:16px}
+
+.feature1 h3{margin:6px 0 6px}
+.feature1 p{margin:0;color:var(--muted);line-height:1.55}
+.feature1:hover{background:#F5C40011; border-color:rgba(245,196,0,.18); transform:translateY(-2px); color:#F5C400}
 .list{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.6}
 .banner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center;padding:18px;border-radius:var(--radius);border:1px solid var(--border);background:linear-gradient(90deg,rgba(79,140,255,.18),rgba(57,217,138,.10))}
 .banner p{margin:0;color:var(--muted)}
