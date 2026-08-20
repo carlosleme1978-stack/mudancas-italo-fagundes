@@ -1,5 +1,5 @@
 window.SITE_CONFIG = {
-  companyName: "Fagundes Transportes",
+  companyName: "Fagundes Transportes e Mudanças",
   baseUrl: "https://www.fagundestransportes.pt",
   whatsappNumber: "351919760696",
   whatsappText: "Olá! Gostaria de um orçamento para mudanças.",
