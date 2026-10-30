@@ -2,6 +2,8 @@ window.SITE_CONFIG = {
   companyName: "Fagundes Transportes e Mudanças",
   baseUrl: "https://www.fagundestransportes.pt",
   whatsappNumber: "351919760696",
+  phoneNumber: "+351919760696",
+  phoneDisplay: "+351 919 760 696",
   whatsappText: "Olá! Gostaria de um orçamento para mudanças.",
   googleBusinessReviewUrl: "https://share.google/rziBJdpMMm7338O02", // TODO: substitua pelo link 'Deixar avaliação' do Google (g.page/...)
   googleMapsUrl: "", // TODO: se tiver link do Google Maps, coloque aqui
