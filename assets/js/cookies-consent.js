@@ -2,13 +2,13 @@
  * Consentimento de cookies — Fagundes Transportes (FAG-ADS-04B, FAG-ADS-05A)
  * Sem dependências externas. Regista a escolha do visitante e expõe o estado
  * (incluindo o mapeamento para o Consent Mode v2). A medição Google Analytics
- * (/assets/js/analytics.js) só é carregada DEPOIS de o visitante autorizar
- * "Análise" (Consent Mode v2, modo básico). Antes disso não há pedidos à Google.
+ * e Google Ads (/assets/js/analytics.js) só é carregada DEPOIS de o visitante autorizar
+ * "Análise" e/ou "Publicidade" (Consent Mode v2, modo básico). Antes disso não há pedidos à Google.
  */
 (function () {
   'use strict';
 
-  var VERSION = 2;                         // v2 (05A): passou a existir Google Analytics; as escolhas v1 deixam de valer
+  var VERSION = 3;                         // v3 (09A): a categoria Publicidade passou a carregar o Google Ads; as escolhas v2 deixam de valer
   var COOKIE_NAME = 'fp_consent';
   var MAX_AGE = 60 * 60 * 24 * 180;        // 6 meses (validade a confirmar pela agência)
   var ROOT_DOMAIN = 'fagundestransportes.pt';
@@ -128,9 +128,9 @@
     loadAnalytics();
   }
 
-  // Carrega a medição uma única vez por página, e só com consentimento de Análise.
+  // Carrega a medição uma única vez por página, e só com consentimento de Análise e/ou Publicidade.
   function loadAnalytics() {
-    if (!state || !state.analytics) return;
+    if (!state || !(state.analytics || state.ads)) return;
     if (window.__fpAnalytics || document.querySelector('script[data-fp-analytics]')) return;
     var s = document.createElement('script');
     s.src = ANALYTICS_SRC;
@@ -231,7 +231,7 @@
         '</label>' +
         '<label class="cc-cat" for="cc-ads">' +
           '<span class="cc-cat-text"><span class="cc-cat-name">Publicidade</span>' +
-          '<span class="cc-cat-desc" id="cc-ads-desc">Medição de anúncios Google. Ainda não está ativa neste site. Não personaliza anúncios. Desativado por defeito.</span></span>' +
+          '<span class="cc-cat-desc" id="cc-ads-desc">Mede os pedidos de contacto vindos de anúncios Google (Google Ads). Não personaliza anúncios. Desativado por defeito.</span></span>' +
           '<input type="checkbox" class="cc-switch" role="switch" id="cc-ads" aria-describedby="cc-ads-desc">' +
         '</label>' +
         '<div class="cc-dialog-actions">' +

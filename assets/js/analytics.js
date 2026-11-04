@@ -1,27 +1,30 @@
 /*
- * Medição GA4 — Fagundes Transportes (FAG-ADS-05A)
+ * Medição Google — Fagundes Transportes (FAG-ADS-05A, FAG-ADS-09A)
  * Este ficheiro NUNCA é incluído diretamente nas páginas: é carregado por
- * cookies-consent.js só depois de o visitante autorizar a categoria "Análise"
- * (Consent Mode v2, modo básico). Não envia dados pessoais.
+ * cookies-consent.js só depois de o visitante autorizar "Análise" e/ou
+ * "Publicidade" (Consent Mode v2, modo básico). Não envia dados pessoais.
+ * - Google Analytics (GA4) só com a categoria Análise.
+ * - Google Ads (medição de conversões) só com a categoria Publicidade.
  */
 (function () {
   'use strict';
 
   var GA_ID = 'G-SMMXQHF7ZQ';
+  var ADS_ID = 'AW-18555572553';
   var consent = window.fpConsent;
 
-  // Uma única inicialização por página; e nada sem consentimento válido para análise.
+  // Uma única inicialização por página; e nada sem consentimento válido.
   if (window.__fpAnalytics) return;
-  if (!consent || !consent.get() || !consent.get().analytics) return;
+  var choice = consent && consent.get();
+  if (!choice || !(choice.analytics || choice.ads)) return;
 
-  var tracker = window.__fpAnalytics = { id: GA_ID, active: true };
-  window['ga-disable-' + GA_ID] = false;
+  var tracker = window.__fpAnalytics = { id: GA_ID, ads: ADS_ID, active: false, adsOn: false };
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
 
   // Estado inicial restritivo e, logo a seguir, as escolhas reais do visitante.
-  // Análise não implica publicidade: cada sinal segue a sua própria categoria.
+  // Cada sinal segue a sua própria categoria; a personalização fica sempre negada.
   window.gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
@@ -31,15 +34,35 @@
   window.gtag('consent', 'update', consent.google());
   window.gtag('set', 'ads_data_redaction', true);
   window.gtag('js', new Date());
-  // Um único config = um único page_view automático. Sem Google Signals nem personalização.
-  window.gtag('config', GA_ID, {
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false
-  });
+
+  // Cada destino é configurado uma única vez, e só com a categoria correspondente.
+  function enableAnalytics() {
+    window['ga-disable-' + GA_ID] = false;
+    if (!tracker.gaConfigured) {
+      tracker.gaConfigured = true;
+      // Um único config = um único page_view automático. Sem Google Signals nem personalização.
+      window.gtag('config', GA_ID, {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    }
+    tracker.active = true;
+  }
+
+  function enableAds() {
+    if (!tracker.adsConfigured) {
+      tracker.adsConfigured = true;
+      window.gtag('config', ADS_ID, { allow_ad_personalization_signals: false });
+    }
+    tracker.adsOn = true;
+  }
+
+  if (choice.analytics) enableAnalytics();
+  if (choice.ads) enableAds();
 
   var script = document.createElement('script');
   script.async = true;
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + (choice.analytics ? GA_ID : ADS_ID);
   document.head.appendChild(script);
 
   /* ---------- eventos de contacto ---------- */
@@ -83,6 +106,7 @@
     last.time = now;
     // Só parâmetros não pessoais: nunca o href (tem o número e o texto da mensagem).
     window.gtag('event', hit.name, {
+      send_to: GA_ID,
       page_path: window.location.pathname,
       page_type: pageType(window.location.pathname),
       button_position: hit.position || 'sem_posicao'
@@ -95,8 +119,13 @@
     var google = e.detail && e.detail.google;
     if (!google) return;
     window.gtag('consent', 'update', google);
-    tracker.active = google.analytics_storage === 'granted';
-    // Opt-out oficial do GA4: impede novos envios nesta página após retirada.
-    window['ga-disable-' + GA_ID] = !tracker.active;
+    if (google.analytics_storage === 'granted') enableAnalytics();
+    else {
+      tracker.active = false;
+      // Opt-out oficial do GA4: impede novos envios nesta página após retirada.
+      window['ga-disable-' + GA_ID] = true;
+    }
+    if (google.ad_storage === 'granted') enableAds();
+    else tracker.adsOn = false;   // com ad_storage negado, o Google Ads deixa de usar cookies
   });
 })();
