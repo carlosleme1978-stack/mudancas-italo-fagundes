@@ -167,8 +167,8 @@
     banner.setAttribute('aria-label', 'Consentimento de cookies');
     banner.innerHTML =
       '<div class="cc-inner">' +
-        '<p class="cc-text">Usamos cookies opcionais de análise (Google Analytics) apenas se autorizar. ' +
-        '<a href="' + POLICY_URL + '">Política de cookies</a></p>' +
+        '<p class="cc-text">Usamos cookies opcionais de análise (Google Analytics) e de medição de publicidade (Google Ads) apenas se autorizar. ' +
+        'Não personalizamos anúncios. Consulte a <a href="' + POLICY_URL + '">Política de Cookies</a>.</p>' +
         '<div class="cc-actions">' +
           '<button type="button" class="cc-btn" data-cc="reject">Recusar tudo</button>' +
           '<button type="button" class="cc-btn" data-cc="accept">Aceitar tudo</button>' +
@@ -231,7 +231,7 @@
         '</label>' +
         '<label class="cc-cat" for="cc-ads">' +
           '<span class="cc-cat-text"><span class="cc-cat-name">Publicidade</span>' +
-          '<span class="cc-cat-desc" id="cc-ads-desc">Mede os pedidos de contacto vindos de anúncios Google (Google Ads). Não personaliza anúncios. Desativado por defeito.</span></span>' +
+          '<span class="cc-cat-desc" id="cc-ads-desc">Mede interações de contacto vindas de anúncios Google (Google Ads). Não personaliza anúncios. Desativado por defeito.</span></span>' +
           '<input type="checkbox" class="cc-switch" role="switch" id="cc-ads" aria-describedby="cc-ads-desc">' +
         '</label>' +
         '<div class="cc-dialog-actions">' +
